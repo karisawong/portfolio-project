@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gallery</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  	<!-- social media icons -->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- link to css file -->
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+
+
+<!-- nav bar -->
+<!-- set black and white colours -->
+<header class="py-3 bg-black text-white w-100 border-bottom border-secondary">
+  <div class="container">
+
+    <!-- wrap items to align them -->
+    <div class="row flex-nowrap justify-content-between align-items-center">
+     
+      <!-- subscribe link -->
+      <div class="col-4 pt-1">
+        <a class="text-white" href="#">SUBSCRIBE</a>
+      </div>
+
+      <!-- nav bar title of website linked to homepage -->
+      <div class="col-4 text-center">
+        <h1 class="m-0 fs-1">
+          <a href="index.html" class="text-white text-decoration-none">PORTFOLIO</a>
+        </h1>
+      </div>
+
+      <!-- search icon -->
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="text-white me-3" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="10.5" cy="10.5" r="7.5"/>
+            <path d="M21 21l-5.2-5.2"/>
+          </svg>
+        </a>
+        
+        <!--sign up button -->
+        <a class="btn btn-sm btn-outline-light" href="#">SIGN UP</a>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- nav bar items -->
+<!-- each linked to a page in the website -->
+<div class="nav-scroller py-1 bg-black">
+  <div class="container">
+    <nav class="nav nav-underline justify-content-between">
+      <a class="nav-link text-white active" href="gallery.html">GALLERY</a>
+      <a class="nav-link text-white" href="resume.html">RESUME</a>
+      <a class="nav-link text-white" href="blogs.html">BLOGS</a>
+      <a class="nav-link text-white" href="contacts.html">CONTACTS</a>
+      <a class="nav-link text-white" href="gallery.html">PROJECTS</a>
+    </nav>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- jumbo hero banner -->
+<div class="gallery-banner d-flex align-items-center">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      
+      <!-- text aligned to left side -->
+      <div class="col-lg-6">
+        <h2 class="display-5 fw-bold text-body-emphasis mb-4 lh-sm">My Projects</h2>
+        <p class="mb-4 text-dark">
+          Explore a curated selection of my creative and technical work, from web development projects to digital designs and interactive prototypes.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- body1/card for 3d designs -->
+<div class="container pt-5 pb-4" id="custom-cards">
+  <h2 class="pb-2">3D Interactive Environment</h2>
+  <p class="text-start mt-3">A 3D interactive environment created for CCT285 Immersive Environment Design course, modeled in Maya and built in Unity. The scene follows a solarpunk narrative where players explore the world and collect screws and gears to rebuild a robot.</p>
+
+  <!-- 1 column on mobile, 2 columns on md and up -->
+  <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+
+    <div class="col">
+      <div class="card custom-card rounded-3 overflow-hidden">
+        <img src="images/envi1.png" class="card-img" alt="A bright pastel workspace with desk, chair, plants, and computer screens.">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card custom-card rounded-3 overflow-hidden">
+        <img src="images/envi3.png" class="card-img" alt="A bright pastel workspace with a robot in the center.">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card custom-card rounded-3 overflow-hidden">
+        <img src="images/envi4.png" class="card-img" alt="A brigh pastel workpace with a pink table and chair, and computer screen.">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card custom-card rounded-3 overflow-hidden">
+        <img src="images/envi5.png" class="card-img" alt="A bright pastel workspace with a pink desk, radio, and plants.">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- carousel -->
+<div class="container text-center my-4">
+  <h2 class="mb-5">3D Models</h2> <!-- heading above the carousel -->
+
+  <div id="carouselExampleIndicators" class="carousel carousel-dark slide mx-auto" style="max-width: 70%;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/plantpot.png" class="d-block w-100 carousel-img" alt="3D model of green plant in blue and grey pot.">
+      </div>
+      <div class="carousel-item">
+        <img src="images/fullrobot.png" class="d-block w-100 carousel-img" alt="3D model of a green, pink, and orange robot.">
+      </div>
+      <div class="carousel-item">
+        <img src="images/tank.png" class="d-block w-100 carousel-img" alt="3D model of a green plant inside tall pink tank.">
+      </div>
+      <div class="carousel-item">
+        <img src="images/casette.png" class="d-block w-100 carousel-img" alt="3D model of a orange casette.">
+      </div>
+      <div class="carousel-item">
+        <img src="images/table.png" class="d-block w-100 carousel-img" alt="3D model of a pink desk with shelves.">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- cards for bitsy room images -->
+<div class="bitsy-bg">
+<div class="container my-3">
+  <h2 class="mb-4">Bitsy Room Designs</h2>
+  <p class="text-start mt-3">A pixel-art game called 'Reverie for Two' made with Bitsy for ENG263 Play and Games course. The player controls the Curator in a museum to interact with NPCs and collect artefacts to complete an exhibit that holds the truth about the Curator's tragic past. Each room is designed with a colour palette to reflect an emotion and conflict.</p>
+  
+  <div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card h-100">
+        <img src="images/room1.png" class="card-img-top" alt="Pixel-art room with neutral brown colour palette.">
+        <div class="card-body">
+          <h5 class="card-title">Room 1</h5>
+          <p class="card-text">Central exhibit hall.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card h-100">
+        <img src="images/room2.png" class="card-img-top" alt="Pixel-art room with red colour palette.">
+        <div class="card-body">
+          <h5 class="card-title">Room 2</h5>
+          <p class="card-text">Boxing ring.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card h-100">
+        <img src="images/room3.png" class="card-img-top" alt="Pixel-art room with grey colour palette.">
+        <div class="card-body">
+          <h5 class="card-title">Room 3</h5>
+          <p class="card-text">Old exhibit room.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card h-100">
+        <img src="images/room4.png" class="card-img-top" alt="Pixel-art room with bright yellow colour palette.">
+        <div class="card-body">
+          <h5 class="card-title">Room 4</h5>
+          <p class="card-text">Painting room.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card h-100">
+        <img src="images/room5.png" class="card-img-top" alt="Pixel-art room with a light blue colour palette.">
+        <div class="card-body">
+          <h5 class="card-title">Room 5</h5>
+          <p class="card-text">Hospital room.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card h-100">
+        <img src="images/room6.png" class="card-img-top" alt="Pixel-art room with light pink and black colour palette.">
+        <div class="card-body">
+          <h5 class="card-title">Room 6</h5>
+          <p class="card-text">Final exit room.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- button to play the game -->
+  <div class="text-start mt-4">
+    <a href="https://krsss-a.itch.io/reverie-for-two" target="_blank" class="btn btn-dark btn-lg">
+      Click here to play the game!
+    </a>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<!-- footer -->
+<!-- setting back to black -->
+<footer class="bg-black text-white py-5">
+  <div class="container">
+    <!-- grids to divide footer links -->
+    <div class="row">
+      <!-- navigation links -->
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Navigate</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white">Home</a></li>
+          <li class="nav-item mb-2"><a href="resume.html" class="nav-link p-0 text-white">Resume</a></li>
+          <li class="nav-item mb-2"><a href="projects.html" class="nav-link p-0 text-white">Projects</a></li>
+          <li class="nav-item mb-2"><a href="blogs.html" class="nav-link p-0 text-white">Blogs</a></li>
+          <li class="nav-item mb-2"><a href="contacts.html" class="nav-link p-0 text-white">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- about me links -->
+      <div class="col-6 col-md-2 mb-3">
+        <h5>About Me</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="gallery.html" class="nav-link p-0 text-white">Gallery</a></li>
+          <li class="nav-item mb-2"><a href="resume.html" class="nav-link p-0 text-white">Skills</a></li>
+          <li class="nav-item mb-2"><a href="resume.html" class="nav-link p-0 text-white">Education</a></li>
+          <li class="nav-item mb-2"><a href="resume.html" class="nav-link p-0 text-white">Experience</a></li>
+          <li class="nav-item mb-2"><a href="resume.html" class="nav-link p-0 text-white">Testimonials</a></li>
+        </ul>
+      </div>
+
+      <!-- column for subscribe input -->
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe</h5>
+          <p>Get updates on my latest projects and blog posts.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2 mb-3">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <!-- input email adress and subsribe button -->
+            <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+            <button class="btn btn-lg btn-light btn-outline-secondary" type="button">Subscribe</button>
+          </div>
+
+          <!-- social media icons linked to sites -->
+          <div class="d-flex gap-3 mt-2">
+            <a href="https://www.instagram.com" target="_blank" class="text-white fs-4">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/karisa-wong" target="_blank" class="text-white fs-4">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:karisa@example.com" class="text-white fs-4">
+              <i class="bi bi-envelope"></i>
+            </a>
+            <!-- link to itch.io account -->
+            <a href="https://krsss-a.itch.io/" target="_blank" class="text-white fs-4">
+              Itch.io
+            </a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
